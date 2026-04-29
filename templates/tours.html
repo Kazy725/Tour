@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/test.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%for tour in data.tours%}
+    <div class="Wed">
+        <img src="/static/img/tours/{{tour[1]}}.webp" alt="">
+        <h1>
+            {{tour[1]}}
+        </h1>
+        <h2>
+            Цена: {{tour[2]}}
+        </h2>
+        <p>
+            {{tour[3]}}
+        </p>
+        <p>
+            Страна: {{tour[4]}}
+        </p>
+        <p>
+            {{tour[5]}}
+        </p>
+        <p>
+            {{tour[6]}}
+        </p>
+        <p>
+            {{tour[7]}}
+        </p>
+    </div>
+    {%endfor%}
+
+</body>
+</html>

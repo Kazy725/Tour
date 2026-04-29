@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{data.tour[1]}}</title>
+</head>
+<body>
+    <header>
+        <img src="/static/img/logo.png" alt="">
+        <nav>
+            <div class="nav-item"><a href="#search">Поиск</a></div>
+            <div class="nav-item"><a href="#tours">Рекомендации</a></div>
+            <div class="nav-item">Контакты</div>
+        </nav>
+    </header>
+
+    <div class="header-bg">
+
+    </div>
+
+    <div class="header-fake">
+
+    </div>
+
+    <main>
+        <div class="tour-card">
+            <img class="img_dop" src="/static/img/tours/{{data.tour[1]}}.webp" alt="">
+
+        <div class="tour-card-info">
+            <div class="tour-card-name-group page_horizontal">
+                <h1>
+                    {{data.tour[1]}} <!-- Название тура -->
+                </h1>
+                
+                <div class="sep">
+                    •
+                </div>
+
+                <p>{{data.tour[5]}}</p> <!-- Категория(место) -->
+
+            </div>
+
+            <p  class="font-size-20">{{data.tour[3]}}</p>
+
+            <div class="tour-card-description-group">
+                <div class="tour-description-item font-size-18s">
+                    {{data.tour[4]}} <!-- Описание -->
+                </div>
+                <div class="sep">
+                    •
+                </div>
+
+                <div class="tour-description-item font-size-18">
+                    {{data.tour[6]}} Дней
+                </div>
+            </div>
+            <div class="tour-card-price-group">
+                <h2>{{data.tour[2]}}₽</h2>
+                <div class="price-group-buttons">
+                    <button class="buy-tour">Купить</button>
+                    <form class="like-form" action="/tour/">
+                        <button class="like button_none border_none" type="submit"><img src="/static/img/heart.png" alt="">&nbsp;&nbsp;20</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <h1>Недавно смотрели</h1>
+        <div class="recents">
+            <div class="tour">
+                <img class="img_dop" src="/static/img/temp_tour.webp" alt="">
+                <div class="tour-overlay">
+                </div>
+                <p>Название тура</p>
+            </div>
+
+            <div class="tour">
+                <img  class="img_dop" src="/static/img/temp_tour.webp" alt="">
+                <div class="tour-overlay">
+                </div>
+                <p>Название тура</p>
+            </div>
+
+            <div class="tour">
+                <img class="img_dop" src="/static/img/temp_tour.webp" alt="">
+                <div class="tour-overlay">
+                </div>
+                <p>Название тура</p>
+            </div>
+
+            <div class="tour">
+                <img class="img_dop" src="/static/img/temp_tour.webp" alt="">
+                <div class="tour-overlay">
+                </div>
+                <p>Название тура</p>
+            </div>
+
+            
+
+        </div>
+    </main>
+    <footer>
+        <img src="/static/img/logo.png" alt="">
+        <p>Designed at <a href="https://easycode.tech" target="_blank">EasyCode <img src="/static/img/link.png" alt=""></a></p>
+        <div class="contacts">
+            <p>77777777777</p>
+            <p>skdjnjv@kfejnv.dfvkjn</p>
+        </div>
+    </footer>
+
+</body>
+</html>

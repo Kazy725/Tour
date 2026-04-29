@@ -1,0 +1,26 @@
+img {
+    width: 500px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 , h2 {
+    font-size: 30px;
+}
+
+div {
+    width: 500px;
+}
+
+.Wed{
+    border: 5px solid purple;
+    width: 500px;
+    display: inline-block;
+    font-size: 20;
+}
+
+button {
+    background: none;
+}
